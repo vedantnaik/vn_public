@@ -11,13 +11,11 @@ class GoldenRetriever:
         docinfoFileContent = docinfoFileContent[:-1]
 
         for docinfoFileLine in docinfoFileContent:
-
             docNo, docLen = docinfoFileLine.split(" ")
             docLen = docLen.split(".")[0]
             self.docInfoDict.update({docNo : int(docLen)})
 
     def getVocabSize(self):
-        return 178050
         es = Elasticsearch()
         indexName = "ap_dataset"
 
@@ -84,11 +82,8 @@ class GoldenRetriever:
         totalNum = len(self.docInfoDict.keys())
         return totalCorpusLen/totalNum
 
-
     def getDocLen(self, docId):
         return self.docInfoDict[docId]
-
-
 
 
 
