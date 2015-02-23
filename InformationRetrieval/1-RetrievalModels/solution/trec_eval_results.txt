@@ -1,0 +1,177 @@
+D:\PythonWS\src\solution>trec_eval.pl qrels.adhoc.51-100.AP89.txt 1-okapiSolution.txt
+
+Queryid (Num):       25
+Total number of documents over all queries
+    Retrieved:     2500
+    Relevant:      1832
+    Rel_ret:        422
+Interpolated Recall - Precision Averages:
+    at 0.00       0.6140
+    at 0.10       0.3580
+    at 0.20       0.2840
+    at 0.30       0.2022
+    at 0.40       0.1430
+    at 0.50       0.0654
+    at 0.60       0.0430
+    at 0.70       0.0373
+    at 0.80       0.0082
+    at 0.90       0.0038
+    at 1.00       0.0000
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1327
+Precision:
+  At    5 docs:   0.3360
+  At   10 docs:   0.3000
+  At   15 docs:   0.2827
+  At   20 docs:   0.2580
+  At   30 docs:   0.2573
+  At  100 docs:   0.1688
+  At  200 docs:   0.0844
+  At  500 docs:   0.0338
+  At 1000 docs:   0.0169
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.1952
+
+===================================================================================================
+
+D:\PythonWS\src\solution>trec_eval.pl qrels.adhoc.51-100.AP89.txt 2-tfidfSolution.txt
+
+Queryid (Num):       25
+Total number of documents over all queries
+    Retrieved:     2500
+    Relevant:      1832
+    Rel_ret:        519
+Interpolated Recall - Precision Averages:
+    at 0.00       0.6197
+    at 0.10       0.4306
+    at 0.20       0.3404
+    at 0.30       0.2893
+    at 0.40       0.2566
+    at 0.50       0.1662
+    at 0.60       0.1037
+    at 0.70       0.0686
+    at 0.80       0.0351
+    at 0.90       0.0172
+    at 1.00       0.0088
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1895
+Precision:
+  At    5 docs:   0.3440
+  At   10 docs:   0.3560
+  At   15 docs:   0.3333
+  At   20 docs:   0.3360
+  At   30 docs:   0.3107
+  At  100 docs:   0.2076
+  At  200 docs:   0.1038
+  At  500 docs:   0.0415
+  At 1000 docs:   0.0208
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.2595
+
+===================================================================================================
+
+D:\PythonWS\src\solution>trec_eval.pl qrels.adhoc.51-100.AP89.txt 3-okapiBM25Solution.txt
+
+Queryid (Num):       25
+Total number of documents over all queries
+    Retrieved:     2500
+    Relevant:      1832
+    Rel_ret:        389
+Interpolated Recall - Precision Averages:
+    at 0.00       0.3662
+    at 0.10       0.2621
+    at 0.20       0.2197
+    at 0.30       0.1808
+    at 0.40       0.1357
+    at 0.50       0.1090
+    at 0.60       0.0687
+    at 0.70       0.0518
+    at 0.80       0.0378
+    at 0.90       0.0043
+    at 1.00       0.0043
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1163
+Precision:
+  At    5 docs:   0.2320
+  At   10 docs:   0.2240
+  At   15 docs:   0.2267
+  At   20 docs:   0.2240
+  At   30 docs:   0.2227
+  At  100 docs:   0.1556
+  At  200 docs:   0.0778
+  At  500 docs:   0.0311
+  At 1000 docs:   0.0156
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.1651
+
+===================================================================================================
+
+D:\PythonWS\src\solution>trec_eval.pl qrels.adhoc.51-100.AP89.txt 4-unigramLmLapSolution.txt
+
+Queryid (Num):       25
+Total number of documents over all queries
+    Retrieved:     2500
+    Relevant:      1832
+    Rel_ret:        445
+Interpolated Recall - Precision Averages:
+    at 0.00       0.6270
+    at 0.10       0.3975
+    at 0.20       0.3068
+    at 0.30       0.2043
+    at 0.40       0.1067
+    at 0.50       0.0784
+    at 0.60       0.0662
+    at 0.70       0.0373
+    at 0.80       0.0071
+    at 0.90       0.0000
+    at 1.00       0.0000
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1433
+Precision:
+  At    5 docs:   0.3760
+  At   10 docs:   0.3400
+  At   15 docs:   0.3147
+  At   20 docs:   0.3020
+  At   30 docs:   0.2773
+  At  100 docs:   0.1780
+  At  200 docs:   0.0890
+  At  500 docs:   0.0356
+  At 1000 docs:   0.0178
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.2088
+
+===================================================================================================
+
+D:\PythonWS\src\solution>trec_eval.pl qrels.adhoc.51-100.AP89.txt 5-unigramLmJMSolution.txt
+
+Queryid (Num):       25
+Total number of documents over all queries
+    Retrieved:     2500
+    Relevant:      1832
+    Rel_ret:        460
+Interpolated Recall - Precision Averages:
+    at 0.00       0.5357
+    at 0.10       0.3234
+    at 0.20       0.2774
+    at 0.30       0.2500
+    at 0.40       0.1905
+    at 0.50       0.1365
+    at 0.60       0.0955
+    at 0.70       0.0328
+    at 0.80       0.0268
+    at 0.90       0.0173
+    at 1.00       0.0151
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1509
+Precision:
+  At    5 docs:   0.2800
+  At   10 docs:   0.2800
+  At   15 docs:   0.2560
+  At   20 docs:   0.2560
+  At   30 docs:   0.2360
+  At  100 docs:   0.1840
+  At  200 docs:   0.0920
+  At  500 docs:   0.0368
+  At 1000 docs:   0.0184
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.2096
