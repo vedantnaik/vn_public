@@ -19,13 +19,6 @@ def unigramLmJelinekMercer(queryNumber, termFreqDict, vocabSize, termTTFDict, re
             ttf = termTTFDict[term]
 
             corpusProbEstimate = ttf/vocabSize
-            corpusProbEstimate = 0.2150536
-            # corpusProbEstimate = ttf/vocabSize -> Average precision (averaged over queries) 0.0953
-            # estimating various values of lambda (corpusProbEstimate)
-            # 0.22 -> Average precision (non-interpolated) for all rel docs(averaged over queries) 0.1468
-            # 0.25 -> Average precision (non-interpolated) for all rel docs(averaged over queries) 0.1454
-            # 0.35 -> Average precision (non-interpolated) for all rel docs(averaged over queries) 0.1426
-            # 0.50 -> Average precision (non-interpolated) for all rel docs(averaged over queries) 0.1396
 
             foreGround = tf/docLen
             temp1 = ttf - tf
