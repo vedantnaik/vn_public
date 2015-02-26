@@ -16,7 +16,6 @@ def unigramLmLaplace(queryNumber, termFreqDict, vocabSize, stemmedArray):
         unigramLMlapScore = 0
 
         for term in termFreqDict[docId][1].keys():
-            # qWordDict[term] = 0
             tf = termFreqDict[docId][1][term]
 
             tfPlusOne = tf + 1.0
