@@ -12,15 +12,12 @@ def tfidf(queryNumber, termFreqDict, avgLenOfCorpus, termDFDict, retriever):
         tf_idf = 0
         for term in termFreqDict[docId][1].keys():
             tf = termFreqDict[docId][1][term]
-            #print ("--------------------------------------->"+docId +" "+term + " tf is " + tf.__str__())
-
             logTerm = math.log(len(retriever.docInfoDict.keys())/int(termDFDict[term]))
             tf_idf += ((tf / (tf + 0.5 + (1.5 * (docLen/avgLenOfCorpus)))) * logTerm)
 
         tfidfScores.append((docId,tf_idf))
-        #print(okapitf_w_d)
+        
 
-    #okapiScores.sort(key=lambda tup : tup[1],reverse=True)
     tfidfScores = sorted(tfidfScores, key=lambda tup: tup[1],reverse=True)
     tfidfScores = tfidfScores [:100]
     print(tfidfScores)
