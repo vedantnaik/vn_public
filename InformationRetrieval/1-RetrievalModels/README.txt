@@ -5,10 +5,7 @@ HOW TO EXECUTE:
 Following is the order in which the files should be executed:
 1. ESapi.py
 2. Indexer.py
-....................................[SUBMISSION CHECKLIST].........(indexer’s source code)
 3. QueryReader.py
-....................................[SUBMISSION CHECKLIST].........(query program’s source code)
-
 
 =====================================================================
 FOLDERS:
@@ -16,12 +13,10 @@ FOLDERS:
 
 "solution"
 - Contains solutions to each language model
-....................................[SUBMISSION CHECKLIST].........(results)
 
 "data"
 - Contains files required by the scoring functions
 - "docinfo" file is generated during indexing
-
 
 =====================================================================
 PYTHON FILES:
