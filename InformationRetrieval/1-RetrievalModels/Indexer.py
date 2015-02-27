@@ -77,7 +77,6 @@ class Indexer:
                 # get document number of first doc in file content,
                 nextDocnumStartLocation = fileContent.find('<DOCNO>')
                 nextDocnumEndLocation = fileContent.find('</DOCNO>')
-                #docnoList.append(fileContent[nextDocnumStartLocation+7:nextDocnumEndLocation].strip())
                 currentDocno = fileContent[nextDocnumStartLocation+7:nextDocnumEndLocation].strip()
 
                 # remove that part from the file content
