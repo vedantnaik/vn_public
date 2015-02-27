@@ -63,16 +63,9 @@ class Indexer:
 
         stopWords = open(r"D:\IR-CS6200\Assg1\data\AP_DATA\stoplist.txt","r").read().split("\n")
 
-
-        text_pattern = re.compile("<TEXT>.*?</TEXT>", re.DOTALL)
-        text_replacements = {"<TEXT>": "", "</TEXT>": "", "\n": " "}
-
         es = Elasticsearch()
         indexName = "ap_dataset"
         docTypeName = "document"
-
-        docnoList = []
-        textList = []
 
         for aFileName in allFiles:
             aFile = open(os.path.join(dirpath,aFileName))
