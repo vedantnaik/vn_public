@@ -211,16 +211,10 @@ class Indexer:
 
 
 
-
-
-################ TEST ########################################
-i = Indexer()
+############ MAIN ##############
+# i = Indexer()
 import timeit
 
-
-
-
-############ MAIN ##############
 startTime = timeit.default_timer()
 i.indexCorpus("AP89DOC",1000,True,True)
 i.indexCorpus("AP89DOC-Stop-NoStem",1000,True,False)
@@ -229,21 +223,3 @@ i.indexCorpus("AP89DOC-NoStop-NoStem",1000,False,False)
 endTime = timeit.default_timer()
 duration = (endTime - startTime)/60
 print(" Total = " + str(duration))
-
-
-############ TEST ##############
-# f = open(r"indexFolder/trial.txt.tmp","w")
-#
-# i.indexDoc(12, "government governmental vedant because allegations This is the test *$#$ dsf /df #", True, True)
-# sleep(1)
-# i.documentIteration(f)
-#
-#
-# print("next iteration")
-# i.indexDoc(13, "because vedant company allegations vedant allegedly happily vedant", True, True)
-# sleep(1)
-# i.documentIteration(f)
-#
-# print(i.tmpCatalog)
-#
-# i.mergeToMainIndex("trial",f)
